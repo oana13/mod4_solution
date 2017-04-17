@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html ng-app='RoutingApp'>
+<html ng-app='MenuApp'>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Intro to ui-router</title>
+    <title>Welcome to our Restaurant</title>
   </head>
   <body>
-    <h1>Intro to ui-router</h1>
-
-    <div class="tabs">
-      <a ui-sref="tab1" ui-sref-active="activeTab">Tab 1</a>
-      <a ui-sref="tab2" ui-sref-active="activeTab">Tab 2</a>
-      <!-- <button ui-sref="tab2">Tab 2</button> -->
-    </div>
-
+    <h1>Welcome to our Restaurant</h1>
     <ui-view></ui-view>
 
     <!-- Libraries -->
-    <script src="lib/angular.min.js"></script>
-    <script src="lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="src/MenuApp/menuapp.module.js"></script>
+    <!-- Routes -->
+    <script src="src/MenuApp/routes.js"></script>
+
 
     <!-- Modules -->
-    <script src="src/app.js"></script>
+
+    <script src="src/MenuApp/main-categories.controller.js"></script>
+    <script src="src/MenuApp/categories.component.js"></script>
+    <script src="src/MenuApp/categories.service.js"></script>
+    <script src="src/MenuApp/item-detail.controller.js"></script>
 
   </body>
 </html>
